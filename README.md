@@ -16,4 +16,32 @@ Tool Used:
 #### 3.Salary Structure and Gender Pay Gap - Are there notable pay gaps across gender, departments and regions? 
 #### 4.Minimum Salary Requirement Analysis - How many employees earn below the defined salary thresshold and where?
 #### 5.Bonus Payment Calculation - How are bonuses awarded based on performance and what is the total compensation distribution?
-### Data Analysis
+### Data Analysis:
+- import data into powerbi
+- transform data by - Remove employees witout salaries and department indicated as "Null"
+- Assign a generic gender status as "Undisclosed" to employees who refused to disclose thier genders
+  ### Gender Distribution Analysis:
+#### DAX Measures Used
+ Gender Count = COUNT('Employee'[Gender])
+
+Gender Percentage = 
+DIVIDE(
+    COUNT('Employee'[Gender]), 
+    CALCULATE(COUNT('Employee'[Gender]), ALL('Employee'[Gender]))
+)
+### Ratings Insights Based on Gender:
+#### DAX Measured Used
+ Average Rating by Gender = AVERAGE('Employee'[Rating])
+ Rating Count by Gender = COUNT('Employee'[Rating])
+ ### Salary Structure and pay Gap
+ #### DAX Measured Used
+  Average Salary by Gender = AVERAGE('Employee'[Salary])
+  Salary Count by Department and Region = COUNT('Employee'[Salary])
+#### Minimum Salary Requirement
+   Employees Below Minimum Salary = COUNTX(FILTER('Employee', 'Employee'[Salary] < 90000), 'Employee'[Salary])
+### Bonus Payment Calculation
+#### DAX Measure Used
+ Bonus Amount = IF('Employee'[Rating] > 3, 'Employee'[Salary] * 0.1, 0)
+ Total Amount to be Paid = 'Employee'[Salary] + 'Bonus Amount'
+
+ 
