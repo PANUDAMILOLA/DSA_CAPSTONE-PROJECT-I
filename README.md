@@ -43,5 +43,5 @@ DIVIDE(
 #### DAX Measure Used
  Bonus Amount = IF('Employee'[Rating] > 3, 'Employee'[Salary] * 0.1, 0)
  Total Amount to be Paid = 'Employee'[Salary] + 'Bonus Amount'
-
+VISUALIZATIONS
  
