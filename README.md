@@ -30,9 +30,9 @@ DIVIDE(
     CALCULATE(COUNT('Employee'[Gender]), ALL('Employee'[Gender]))
 )
 
- 
-   
-#### Insights
+![image](https://github.com/user-attachments/assets/4f27accb-6595-48dc-8a9c-d5fed8636391)
+
+ #### Insights
 Male and female distribution varies significantly by region.
 Generic gender entries suggest areas for improved data collection
 
