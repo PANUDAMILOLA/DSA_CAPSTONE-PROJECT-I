@@ -57,6 +57,8 @@ Most employees are rated between Average and Very Good.
 
   ![image](https://github.com/user-attachments/assets/ad944029-dbae-42d9-8cc2-5d2ced544be2)
 
+![image](https://github.com/user-attachments/assets/e63f91ff-e0c6-44a4-8cc0-1406fd3d5b05)
+
 #### Insights
 Slight pay gap observed in technical departments.
 Some regions offer higher salaries uniformly across genders.
