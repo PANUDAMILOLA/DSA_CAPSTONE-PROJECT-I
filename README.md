@@ -38,17 +38,20 @@ DIVIDE(
 Male and female distribution varies significantly by region.
 Generic gender entries suggest areas for improved data collection
 
-### Ratings Insights Based on Gender:
-#### Insights
-Females had a slightly higher average rating.
+### Rating Insights Based on Gender:
 
-Most employees are rated between Average and Very Good.
-
-#### DAX Measured Used
+#### DAX Measured Used;
  Average Rating by Gender = AVERAGE('Employee'[Rating])
  Rating Count by Gender = COUNT('Employee'[Rating])
+
+ ![image](https://github.com/user-attachments/assets/6fc6edde-2963-4fdf-ad7c-e2f2967c2c75)
+
+#### Insights
+Females had a slightly higher average rating.
+Most employees are rated between Average and Very Good.
+
+ ### Salary Structure and pay Gap:
  
- ### Salary Structure and pay Gap
 #### Insights
 Slight pay gap observed in technical departments.
 
