@@ -31,6 +31,7 @@ DIVIDE(
     CALCULATE(COUNT('Employee'[Gender]), ALL('Employee'[Gender]))
 )
 gender distribution.png
+
 ### Ratings Insights Based on Gender:
 #### DAX Measured Used
  Average Rating by Gender = AVERAGE('Employee'[Rating])
