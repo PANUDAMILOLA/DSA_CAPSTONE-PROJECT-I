@@ -71,6 +71,8 @@ Generic gender entries suggest areas for improved data collection.
 
 #### DAX Measures Used
  Gender Count = COUNT('Employee'[Gender])
+ ### VISUALS
+ 
 
 Gender Percentage = 
 DIVIDE(
@@ -96,20 +98,22 @@ Some regions offer higher salaries uniformly across genders.
  #### DAX Measured Used
   Average Salary by Gender = AVERAGE('Employee'[Salary])
   Salary Count by Department and Region = COUNT('Employee'[Salary])
-#### Minimum Salary Requirement
-Insights
-
-Regions C and E have a large proportion of low-salary employees.
-
-Opportunities exist for equitable wage distribution.
+#### Minimum Salary Requirement:
+##### DAX Measure Used;
    Employees Below Minimum Salary = COUNTX(FILTER('Employee', 'Employee'[Salary] < 90000), 'Employee'[Salary])
-### Bonus Payment Calculation
+    
+  ![Minimum Salary](https://github.com/user-attachments/assets/ab08592a-45eb-4976-aecb-39863ed91395)
+###### Minimum Salary.png
+## Insights
+Regions;kaduna and Abuja have a large proportion of low-salary employees.
+Opportunities exist for equitable wage distribution.
+   
+ ### Bonus Payment Calculation
 #### DAX Measure Used
  Bonus Amount = IF('Employee'[Rating] > 3, 'Employee'[Salary] * 0.1, 0)
  Total Amount to be Paid = 'Employee'[Salary] + 'Bonus Amount'
-VISUALIZATIONS
+Minimum Salary.png
  
 = IF('Employee'[Rating] > 3, 'Employee'[Salary] * 0.1, 0)
  Total Amount to be Paid = 'Employee'[Salary] + 'Bonus Amount'
-VISUALIZATIONS
- 
+
