@@ -32,6 +32,8 @@ DIVIDE(
 
 ![image](https://github.com/user-attachments/assets/4f27accb-6595-48dc-8a9c-d5fed8636391)
 
+![image](https://github.com/user-attachments/assets/fcfb786b-be42-419a-a11c-52a835d05c4d)
+
  #### Insights
 Male and female distribution varies significantly by region.
 Generic gender entries suggest areas for improved data collection
