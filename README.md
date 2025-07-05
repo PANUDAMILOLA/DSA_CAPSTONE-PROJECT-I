@@ -20,69 +20,24 @@ Tool Used:
 - import data into powerbi
 - transform data by - Remove employees witout salaries and department indicated as "Null"
 - Assign a generic gender status as "Undisclosed" to employees who refused to disclose thier genders
-  ### Gender Distribution Analysis:
-
-#### DAX Measures Used
- Gender Count = COUNT('Employee'[Gender])
-
-Gender Percentage = 
-DIVIDE(
-    COUNT('Employee'[Gender]), 
-    CALCULATE(COUNT('Employee'[Gender]), ALL('Employee'[Gender]))
-)
-gender distribution.png
-
-### Ratings Insights Based on Gender:
-#### DAX Measured Used
- Average Rating by Gender = AVERAGE('Employee'[Rating])
- Rating Count by Gender = COUNT('Employee'[Rating])
- ### Salary Structure and pay Gap
- #### DAX Measured Used
-  Average Salary by Gender = AVERAGE('Employee'[Salary])
-  Salary Count by Department and Region = COUNT('Employee'[Salary])
-#### Minimum Salary Requirement
-   Employees Below Minimum Salary = COUNTX(FILTER('Employee', 'Employee'[Salary] < 90000), 'Employee'[Salary])
-### Bonus Payment Calculation
-#### DAX Measure Used
- Bonus Amount # DSA_CAPSTONE-PROJECT-I
-This is my first data analysis project at DSA(The Incubator Hub) using Power Bi to explore employee metrics across gender. salary ,ratings, and bonus
-
-## Poject Topic: Palmora Employee Analysis
-### Project Overview:The Palmora Group seeks to address the issue of gender pay gap to ensure gender equality across the organisation in different regions.
-### Data Source:Palmoria Group emp-data.CVS, provided by The Incubator Hub as part of the DSA training program
-Tool Used:
-* POWERBI;
-     - data Cleaning
-     - data manipulation
-     - creating report
-     - visualization
-### Exploratory Data Analysis:
-#### 1.Gender Distribution Analysis - How are employees distributed across gender,departments,region?
-#### 2.Rating Insight Based on Gender - How do performance ratings differ by gender?
-#### 3.Salary Structure and Gender Pay Gap - Are there notable pay gaps across gender, departments and regions? 
-#### 4.Minimum Salary Requirement Analysis - How many employees earn below the defined salary thresshold and where?
-#### 5.Bonus Payment Calculation - How are bonuses awarded based on performance and what is the total compensation distribution?
-### Data Analysis:
-- import data into powerbi
-- transform data by - Remove employees witout salaries and department indicated as "Null"
-- Assign a generic gender status as "Undisclosed" to employees who refused to disclose thier genders
+  
   ### Gender Distribution Analysis:
   #### DAX Measures Used;
  Gender Count = COUNT('Employee'[Gender])
- ### VISUALS
 Gender Percentage = 
 DIVIDE(
     COUNT('Employee'[Gender]), 
     CALCULATE(COUNT('Employee'[Gender]), ALL('Employee'[Gender]))
 )
 
-   https://github.com/PANUDAMILOLA/DSA_CAPSTONE-PROJECT-I/blob/main/gender%20distribution.png?raw=true
+ 
+   
 #### Insights
 Male and female distribution varies significantly by region.
 Generic gender entries suggest areas for improved data collection
+
 ### Ratings Insights Based on Gender:
 #### Insights
-
 Females had a slightly higher average rating.
 
 Most employees are rated between Average and Very Good.
@@ -90,9 +45,9 @@ Most employees are rated between Average and Very Good.
 #### DAX Measured Used
  Average Rating by Gender = AVERAGE('Employee'[Rating])
  Rating Count by Gender = COUNT('Employee'[Rating])
+ 
  ### Salary Structure and pay Gap
- Insights
-
+#### Insights
 Slight pay gap observed in technical departments.
 
 Some regions offer higher salaries uniformly across genders.
