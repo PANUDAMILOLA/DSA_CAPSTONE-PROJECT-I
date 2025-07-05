@@ -51,14 +51,16 @@ Females had a slightly higher average rating.
 Most employees are rated between Average and Very Good.
 
  ### Salary Structure and pay Gap:
- 
-#### Insights
-Slight pay gap observed in technical departments.
-
-Some regions offer higher salaries uniformly across genders.
- #### DAX Measured Used
+  #### DAX Measured Used
   Average Salary by Gender = AVERAGE('Employee'[Salary])
   Salary Count by Department and Region = COUNT('Employee'[Salary])
+
+  ![image](https://github.com/user-attachments/assets/ad944029-dbae-42d9-8cc2-5d2ced544be2)
+
+#### Insights
+Slight pay gap observed in technical departments.
+Some regions offer higher salaries uniformly across genders.
+
 #### Minimum Salary Requirement:
 ##### DAX Measure Used;
    Employees Below Minimum Salary = COUNTX(FILTER('Employee', 'Employee'[Salary] < 90000), 'Employee'[Salary])
