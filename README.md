@@ -66,20 +66,19 @@ Tool Used:
 - transform data by - Remove employees witout salaries and department indicated as "Null"
 - Assign a generic gender status as "Undisclosed" to employees who refused to disclose thier genders
   ### Gender Distribution Analysis:
-#### Insights
-Male and female distribution varies significantly by region.
-Generic gender entries suggest areas for improved data collection.
-
-#### DAX Measures Used
+  #### DAX Measures Used;
  Gender Count = COUNT('Employee'[Gender])
  ### VISUALS
- 
-
 Gender Percentage = 
 DIVIDE(
     COUNT('Employee'[Gender]), 
     CALCULATE(COUNT('Employee'[Gender]), ALL('Employee'[Gender]))
 )
+
+   https://github.com/PANUDAMILOLA/DSA_CAPSTONE-PROJECT-I/blob/main/gender%20distribution.png?raw=true
+#### Insights
+Male and female distribution varies significantly by region.
+Generic gender entries suggest areas for improved data collection
 ### Ratings Insights Based on Gender:
 #### Insights
 
